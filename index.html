@@ -62,8 +62,6 @@ button {
     right: -100px;
 }
 
-/* GENERAL */
-
 .page {
     display: none;
     min-height: 100vh;
@@ -84,8 +82,6 @@ button {
     width: 92%;
     margin: auto;
 }
-
-/* INTRO PAGE */
 
 #intro {
     position: relative;
@@ -176,8 +172,6 @@ button {
     margin-right: 10px;
 }
 
-/* HEADER */
-
 header {
     padding: 22px 0;
     display: flex;
@@ -204,8 +198,6 @@ header {
     font-weight: 800;
     color: #7a8aa3;
 }
-
-/* MAIN MAP */
 
 .main-title {
     font-size: clamp(26px, 4vw, 38px);
@@ -317,8 +309,6 @@ header {
     stroke-width: 2;
 }
 
-/* SIDE PANEL */
-
 .side-panel {
     background: white;
     border-radius: 25px;
@@ -425,9 +415,6 @@ header {
     background: #fff0ed;
     color: #e77b66;
 }
-
-
-/* BATTLE QUIZ */
 
 .battle-unlock {
     margin-top: 18px;
@@ -691,9 +678,6 @@ header {
     }
 }
 
-
-/* DETAIL PAGE */
-
 #detail {
     padding-bottom: 50px;
 }
@@ -833,16 +817,12 @@ header {
     line-height: 1.7;
 }
 
-/* FOOTER */
-
 footer {
     text-align: center;
     color: #a1adbf;
     font-size: 12px;
     padding: 25px 0;
 }
-
-/* RESPONSIVE */
 
 @media(max-width: 800px) {
     .map-layout {
@@ -889,7 +869,6 @@ footer {
     z-index: 100;
 }
 
-/* Penyesuaian untuk layar HP */
 @media (max-width: 600px) {
     .school-logo {
         top: 15px;
@@ -929,8 +908,6 @@ footer {
 <div class="bg-decoration decoration-one"></div>
 <div class="bg-decoration decoration-two"></div>
 
-<!-- ================= INTRO ================= -->
-
 <section id="intro" class="page active">
 
 <img 
@@ -957,13 +934,11 @@ footer {
 
         <svg viewBox="0 0 350 290" xmlns="http://www.w3.org/2000/svg">
 
-            <!-- Decorative elements -->
             <circle cx="55" cy="65" r="22" fill="#ffdd9d"/>
             <circle cx="290" cy="65" r="28" fill="#c9e5ff"/>
             <circle cx="55" cy="220" r="14" fill="#b9f0dc"/>
             <circle cx="300" cy="220" r="19" fill="#ffd1da"/>
 
-            <!-- Human body -->
             <circle cx="175" cy="43" r="34" fill="#ffd2ad"/>
 
             <path d="M145 78 Q120 82 110 105
@@ -974,27 +949,22 @@ footer {
                      L240 105 Q230 82 205 78Z"
                   fill="#8dbcf5"/>
 
-            <!-- Neck -->
             <rect x="160" y="70" width="30" height="24"
                   rx="8" fill="#ffd2ad"/>
 
-            <!-- Face -->
             <circle cx="163" cy="42" r="3" fill="#34425b"/>
             <circle cx="187" cy="42" r="3" fill="#34425b"/>
             
-            <!-- Esophagus -->
             <path d="M175 95 L175 147"
                   stroke="#e49b54" stroke-width="10"
                   stroke-linecap="round"/>
 
-            <!-- Stomach -->
             <path d="M176 145
                      C155 140 143 165 151 185
                      C159 210 202 204 209 181
                      C215 163 194 151 184 155Z"
                   fill="#ff9c89" stroke="#e67f72" stroke-width="2"/>
 
-            <!-- Intestines -->
             <path d="M143 190
                      Q125 190 130 210
                      Q130 246 155 242
@@ -1011,7 +981,6 @@ footer {
                   fill="none" stroke="#e9868a"
                   stroke-width="8" stroke-linecap="round"/>
 
-            <!-- Food sparkles -->
             <path d="M255 115 l5 -12 l5 12 l12 5 l-12 5 l-5 12 l-5 -12 l-12 -5Z"
                   fill="#ffbb50"/>
             <path d="M78 145 l4 -9 l4 9 l9 4 l-9 4 l-4 9 l-4 -9 l-9 -4Z"
@@ -1034,9 +1003,6 @@ footer {
 </div>
 </section>
 
-
-<!-- ================= MAIN MAP ================= -->
-
 <section id="map" class="page">
 
 <div class="container">
@@ -1058,8 +1024,6 @@ footer {
 
 <div class="map-layout">
 
-    <!-- BODY DIAGRAM -->
-
     <div class="body-card">
 
         <h3>🧍 Peta Sistem Pencernaan Manusia</h3>
@@ -1077,8 +1041,6 @@ footer {
                     </feMerge>
                 </filter>
             </defs>
-
-            <!-- BODY SILHOUETTE -->
 
             <circle cx="220" cy="55" r="39"
                     fill="#ffddc4" stroke="#e9b99d" stroke-width="2"/>
@@ -1099,15 +1061,12 @@ footer {
                   fill="#e6effc" stroke="#c9daf1"
                   stroke-width="2"/>
 
-            <!-- FACE -->
-
             <circle cx="207" cy="51" r="3" fill="#596c85"/>
             <circle cx="233" cy="51" r="3" fill="#596c85"/>
             <path d="M210 69 Q220 76 230 69"
                   fill="none" stroke="#dc907c"
                   stroke-width="2.5" stroke-linecap="round"/>
 
-            <!-- ROUTE PATH -->
             <path id="foodRoute"
                 class="route"
                 d="M220 84
@@ -1121,7 +1080,6 @@ footer {
                    L220 460
                    L220 505"/>
 
-            <!-- MOUTH -->
 <g class="organ" data-organ="mulut" tabindex="0" role="button"
    aria-label="Mulut">
     <path d="M210 68 Q220 75 230 68"
@@ -1131,7 +1089,6 @@ footer {
             fill="transparent"/>
 </g>
 
-            <!-- ESOPHAGUS -->
             <g class="organ" data-organ="kerongkongan"
                tabindex="0" role="button" aria-label="Kerongkongan">
                 <path d="M220 104 L220 204"
@@ -1142,7 +1099,6 @@ footer {
                       stroke-linecap="round"/>
             </g>
 
-            <!-- LIVER -->
             <g class="organ" data-organ="hati"
                tabindex="0" role="button" aria-label="Hati">
                 <path d="M235 220
@@ -1152,7 +1108,6 @@ footer {
                       fill="#a85b42" stroke="#8e4837" stroke-width="2"/>
             </g>
 
-            <!-- STOMACH -->
             <g class="organ" data-organ="lambung"
                tabindex="0" role="button" aria-label="Lambung">
                 <path d="M219 206
@@ -1165,7 +1120,6 @@ footer {
                       fill="none" stroke="#ffc2ad" stroke-width="3"/>
             </g>
 
-            <!-- GALLBLADDER -->
             <g class="organ" data-organ="kantungEmpedu"
                tabindex="0" role="button" aria-label="Kantung empedu">
                 <path d="M270 250 Q282 260 272 276
@@ -1173,7 +1127,6 @@ footer {
                       fill="#70b87d" stroke="#4c9c67" stroke-width="2"/>
             </g>
 
-            <!-- PANCREAS -->
             <g class="organ" data-organ="pankreas"
                tabindex="0" role="button" aria-label="Pankreas">
                 <path d="M196 275 Q220 263 250 276
@@ -1181,7 +1134,6 @@ footer {
                       fill="#e6b75c" stroke="#d59b3e" stroke-width="2"/>
             </g>
 
-            <!-- LARGE INTESTINE -->
             <g class="organ" data-organ="ususBesar"
                tabindex="0" role="button" aria-label="Usus besar">
                 <path d="M174 291
@@ -1204,7 +1156,6 @@ footer {
                       stroke-linecap="round"/>
             </g>
 
-            <!-- SMALL INTESTINE -->
             <g class="organ" data-organ="ususHalus"
                tabindex="0" role="button" aria-label="Usus halus">
                 <path d="M180 309
@@ -1223,7 +1174,6 @@ footer {
                       stroke-width="9" stroke-linecap="round"/>
             </g>
 
-            <!-- RECTUM -->
             <g class="organ" data-organ="rektum"
                tabindex="0" role="button" aria-label="Rektum">
                 <path d="M220 408 L220 471"
@@ -1231,14 +1181,12 @@ footer {
                       stroke-linecap="round"/>
             </g>
 
-            <!-- ANUS -->
             <g class="organ" data-organ="anus"
                tabindex="0" role="button" aria-label="Anus">
                 <ellipse cx="220" cy="488" rx="12" ry="7"
                          fill="#c76c7b" stroke="#a64f61" stroke-width="2"/>
             </g>
 
-            <!-- LABELS -->
             <g class="organ-label">
                 <text x="245" y="87">Mulut</text>
                 <text x="239" y="160">Kerongkongan</text>
@@ -1252,7 +1200,6 @@ footer {
                 <text x="245" y="492">Anus</text>
             </g>
 
-            <!-- ANIMATED FOOD DOT -->
             <circle r="9" class="food-dot" filter="url(#glow)">
                 <animateMotion dur="14s"
                     repeatCount="indefinite"
@@ -1265,9 +1212,6 @@ footer {
         </svg>
 
     </div>
-
-
-    <!-- SIDE PANEL -->
 
     <aside class="side-panel">
 
@@ -1318,9 +1262,6 @@ footer {
 
 </div>
 </section>
-
-
-<!-- ================= DETAIL PAGE ================= -->
 
 <section id="detail" class="page">
 
@@ -1374,9 +1315,6 @@ footer {
 
 </div>
 </section>
-
-
-<!-- ================= BATTLE QUIZ PAGE ================= -->
 
 <section id="battle" class="page">
 <div class="container">
@@ -1443,11 +1381,7 @@ footer {
 
 
 <script>
-
-/* =====================================
-   DATA ORGAN PENCERNAAN
-===================================== */
-
+    
 const organs = {
 
     mulut: {
@@ -1655,12 +1589,6 @@ const organs = {
 
 };
 
-
-/* =====================================
-   SVG DETAIL ORGAN
-   Ilustrasi khusus ketika organ dibuka
-===================================== */
-
 const organColors = {
     mulut: "#ed7786",
     kerongkongan: "#e9a15d",
@@ -1808,12 +1736,6 @@ function makeOrganIllustration(id) {
     </svg>`;
 }
 
-
-/* =====================================
-   ORGAN LEARNING CHECKLIST
-===================================== */
-
-// Semua organ yang dapat diklik pada ilustrasi utama.
 const allOrganIds = [
     'mulut',
     'kerongkongan',
@@ -1849,11 +1771,6 @@ function updateBattleUnlock() {
         : '🔒 Battle Quiz Terkunci';
 }
 
-
-/* =====================================
-   NAVIGATION
-===================================== */
-
 function showPage(page) {
 
     document.querySelectorAll('.page').forEach(p => {
@@ -1877,11 +1794,6 @@ function startAdventure() {
 function backToMap() {
     showPage('map');
 }
-
-
-/* =====================================
-   PATH LIST
-===================================== */
 
 const mainJourney = [
     {id: 'mulut', name: 'Mulut'},
@@ -1909,24 +1821,17 @@ function createPathList() {
 
 }
 
-
-/* =====================================
-   OPEN ORGAN DETAILS
-===================================== */
-
 function openOrgan(id) {
 
     const data = organs[id];
 
     if (!data) return;
 
-    // Catat organ yang sudah dipelajari untuk membuka Battle Quiz.
     if (allOrganIds.includes(id)) {
         clickedOrgans.add(id);
         updateBattleUnlock();
     }
 
-    // Highlight selected organ
     document.querySelectorAll('.organ').forEach(el => {
         el.classList.toggle(
             'selected',
@@ -1934,7 +1839,6 @@ function openOrgan(id) {
         );
     });
 
-    // Update detail page
     document.getElementById('detailCategory').textContent =
         data.category;
 
@@ -1944,7 +1848,6 @@ function openOrgan(id) {
     document.getElementById('detailDescription').textContent =
         data.description;
 
-    // Functions
     document.getElementById('detailFunction').innerHTML =
         data.functions.map(item => `
             <div class="info-card">
@@ -1953,7 +1856,6 @@ function openOrgan(id) {
             </div>
         `).join('');
 
-    // Enzymes
     document.getElementById('detailEnzymes').innerHTML =
         data.enzymes.map(item => `
             <div class="enzyme-card">
@@ -1962,18 +1864,14 @@ function openOrgan(id) {
             </div>
         `).join('');
 
-    // Note
     document.getElementById('detailNote').textContent =
         data.note;
 
-    // Illustration
     document.getElementById('detailIllustration').innerHTML =
         makeOrganIllustration(id);
 
-    // Show detail
     showPage('detail');
 
-    // Update progress
     const index = mainJourney.findIndex(item => item.id === id);
 
     if (index !== -1) {
@@ -1981,11 +1879,6 @@ function openOrgan(id) {
     }
 
 }
-
-
-/* =====================================
-   PROGRESS
-===================================== */
 
 function updateProgress(number) {
 
@@ -2009,11 +1902,6 @@ function updateProgress(number) {
     });
 
 }
-
-
-/* =====================================
-   BATTLE QUIZ
-===================================== */
 
 const battleQuestions = [
     {
@@ -2312,11 +2200,6 @@ function showQuizResult() {
     `;
 }
 
-
-/* =====================================
-   ANIMATION CONTROL
-===================================== */
-
 let animationPaused = false;
 
 const foodAnimation = document.querySelector('.food-dot')
@@ -2364,11 +2247,6 @@ function restartAnimation() {
 
     updateProgress(0);
 }
-
-
-/* =====================================
-   CLICKABLE ORGAN EVENTS
-===================================== */
 
 document.querySelectorAll('.organ').forEach(organ => {
 
